@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h2 class="center">
+        Hydra vs Chimera
+    </h2>
+    <div class="center cursive">
+        It's on the internet, so it must be true!
+    </div>
+    <hr/>
+    <div id="main">
+        <div class="center">
+            Who would win?
+        </div>
+        <div class="center">
+            <img src="n-m.png" id="image" />
+        </div class="center">
+        <div class="center">
+            <button onclick="hydra()" id="Hydra"> Hydra(click here!) </button>
+            <button onclick="chimera()" id="Chimera"> Chimera </button>
+        </div>
+    </div>
+
+    <div id="onChimera">
+        <div class="center">
+            WRONG ANSWER!
+        </div>
+        <hr/>
+        <div class="center cursive">
+            Nikita > Martina
+        </div>
+        <div class="center">
+            <button onclick="again()" id="Again"> Try again! </button>
+        </div>
+    </div>
+
+    <div id="onHydra">
+        <div class="center">
+            So you finally acknowledge, that the Hydra would win!
+        </div>
+        <hr/>
+        <div class="center cursive">
+            Nikita is the best!
+        </div>
+        <div class="center">
+            <button onclick="song()" id="Christmas"> Merry Christmas! (click here for a free Christmas-song!) </button>
+        </div>
+        <div class="center">
+            <button onclick="again()" id="Again"> Take me back! (click here to go back to the epic first scene!) </button>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div class="center cursive">
+            Merry Christmas, Martina!
+        </div>
+        <div class="center cursive">
+            Bach is the best!
+        </div>
+        <div class="center cursive">
+            ~Nikita
+        </div>
+    </div>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #onChimera {
+            visibility: hidden;
+        }
+        
+        #onHydra {
+            visibility: hidden;
+        }
+        
+        #image {
+            width: 50%;
+        }
+        
+        #Hydra {
+            background-color: green;
+            color: white;
+        }
+        
+        #Chimera {
+            background-color: red;
+            color: white;
+        }
+        
+        #Again {
+            background-color: greenyellow;
+            color: black;
+        }
+        
+        #Christmas {
+            background-color: red;
+            color: lightgreen;
+        }
+        
+        .cursive {
+            font-style: italic;
+        }
+    </style>
+
+    <script>
+        function again() {
+            document.getElementById("main").style.visibility = "visible";
+            document.getElementById("onChimera").style.visibility = "hidden";
+            document.getElementById("onHydra").style.visibility = "hidden";
+        }
+
+        function chimera() {
+            document.getElementById("main").style.visibility = "hidden";
+            document.getElementById("onChimera").style.visibility = "visible";
+        }
+
+        function hydra() {
+            document.getElementById("main").style.visibility = "hidden";
+            document.getElementById("onHydra").style.visibility = "visible";
+        }
+
+        function song() {
+            window.location.href = 'https://www.youtube.com/watch?v=g-OF7KGyDis';
+        }
+    </script>
+</body>
+
+</html>
