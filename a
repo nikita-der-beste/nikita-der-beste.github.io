@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="haha()" id="lol"> Nikita's Super Cooler Button (du solltest hier drauf dr&uuml;cken!) </button>
+</body>
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #lol {
+        background-color: greenyellow;
+        color: black;
+        width: 100vw;
+        height: 100vh;
+        font-size: 10vw;
+    }
+</style>
+
+<script>
+    function haha() {
+        document.getElementById("lol").onclick = "";
+        document.getElementById("lol").style.backgroundColor = "red";
+        document.getElementById("lol").style.color = "lightblue";
+        document.getElementById("lol").textContent = "Get Trolled!";
+        setTimeout(() => {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        }, 2000);
+    }
+</script>
+
+</html>
