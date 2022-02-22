@@ -6,6 +6,16 @@
     height: 100vh;
 }
 
+#l_button {
+    background-color: greenyellow;
+    color: blue;
+}
+
+#fat {
+    font-weight: bold;
+    color: red;
+}
+
 #meow {
     visibility: hidden;
 }
