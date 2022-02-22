@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .imgs {
     position: absolute;
     top: 0;
