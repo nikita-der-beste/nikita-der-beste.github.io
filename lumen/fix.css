@@ -1,5 +1,8 @@
 body {
     overflow: hidden;
+    position: fixed;
+    margin: 0;
+    height: 100%;
 }
 
 .imgs {
