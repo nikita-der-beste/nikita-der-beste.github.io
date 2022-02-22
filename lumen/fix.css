@@ -1,0 +1,72 @@
+.imgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#meow {
+    visibility: hidden;
+}
+
+.img_a {
+    animation-delay: 0s;
+    -webkit-animation: spin 15s linear infinite;
+    -moz-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite;
+}
+
+.img_b {
+    animation-delay: -3s;
+    -webkit-animation: spin 11s linear infinite;
+    -moz-animation: spin 11s linear infinite;
+    animation: spin 11s linear infinite;
+}
+
+.img_c {
+    animation-delay: -6s;
+    -webkit-animation: spin 18s linear infinite;
+    -moz-animation: spin 18s linear infinite;
+    animation: spin 18s linear infinite;
+}
+
+.img_d {
+    animation-delay: -9s;
+    -webkit-animation: spin 28s linear infinite;
+    -moz-animation: spin 28s linear infinite;
+    animation: spin 28s linear infinite;
+}
+
+.img_e {
+    animation-delay: -12s;
+    -webkit-animation: spin 14s linear infinite;
+    -moz-animation: spin 14s linear infinite;
+    animation: spin 14s linear infinite;
+}
+
+.img_f {
+    animation-delay: -15s;
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
