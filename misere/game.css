@@ -1,0 +1,77 @@
+.stack3 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc((100vw - 3 * min(30vw, 30vh)) / 3);
+    margin-right: calc((100vw - 3 * min(30vw, 30vh)) / 3);
+}
+
+.stack2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc((100vw - 3 * min(30vw, 30vh)) / 3 + min(15vw, 15vh));
+    margin-right: calc((100vw - 3 * min(30vw, 30vh)) / 3 + min(15vw, 15vh));
+}
+
+.stack1 {
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+    border: 1px solid rgb(230, 224, 193);
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    background-color: rgb(219, 213, 184);
+    font-size: min(8vw, 8vh);
+    font-family: 'Copperplate';
+    color: rgb(53, 44, 44);
+    border: 1px solid rgb(40, 32, 32);
+    width: min(10vw, 10vh);
+    height: min(10vw, 10vh);
+    flex-grow: 100;
+}
+
+.lost {
+    background-color: rgb(77, 59, 59) !important;
+}
+
+#gameover {
+    visibility: hidden;
+}
+
+#cover {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 200vh;
+}
+
+#endscr {
+    font-size: min(5vw, 5vh);
+    position: fixed;
+    left: calc((100vw - min(50vw, 50vh)) / 2);
+    top: calc((100vh - min(50vw, 50vh)) / 2);
+    width: min(50vw, 50vh);
+    height: min(50vw, 50vh);
+}
+
+#ha {
+    width: min(30vw, 30vh);
+    height: min(30vw, 30vh);
+}
+
+#moves {
+    font-size: min(2vw, 2vh);
+}
+
+.bigbutton {
+    font-size: min(3vw, 3vh);
+}
