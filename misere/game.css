@@ -1,15 +1,11 @@
 .stack3 {
     display: flex;
-    justify-content: space-between;
-    margin-left: calc((100vw - 3 * min(30vw, 30vh)) / 3);
-    margin-right: calc((100vw - 3 * min(30vw, 30vh)) / 3);
+    justify-content: center;
 }
 
 .stack2 {
     display: flex;
-    justify-content: space-between;
-    margin-left: calc((100vw - 3 * min(30vw, 30vh)) / 3 + min(15vw, 15vh));
-    margin-right: calc((100vw - 3 * min(30vw, 30vh)) / 3 + min(15vw, 15vh));
+    justify-content: center;
 }
 
 .stack1 {
@@ -20,6 +16,8 @@
 .field {
     border: 1px solid rgb(230, 224, 193);
     text-align: center;
+    margin-left: calc((100vw - 3 * min(30vw, 30vh)) / 6);
+    margin-right: calc((100vw - 3 * min(30vw, 30vh)) / 6);
 }
 
 .row {
