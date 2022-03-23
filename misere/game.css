@@ -16,8 +16,8 @@
 .field {
     border: 1px solid rgb(230, 224, 193);
     text-align: center;
-    margin-left: calc((100vw - 3 * min(30vw, 30vh)) / 6);
-    margin-right: calc((100vw - 3 * min(30vw, 30vh)) / 6);
+    margin-left: calc((100vw - 3 * min(30vw, 30vh)) / 8);
+    margin-right: calc((100vw - 3 * min(30vw, 30vh)) / 8);
 }
 
 .row {
