@@ -1,0 +1,22 @@
+#intro {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+#numfields {
+    width: 40%;
+    font-size: 80%;
+}
+
+#playbutton {
+    font-size: 80%;
+}
+
+#invalid {
+    color: rgba(220, 27, 20, 0);
+    font-size: 60%;
+}
