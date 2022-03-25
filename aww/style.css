@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(40, 40, 34);
+}
+
+#cuties {
+    font-family: 'Copperplate';
+    font-size: 2vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent {
+    width: 50vw;
+    height: 50vh;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Copperplate';
+    font-size: 2vh;
+    color: lightgray;
+}
+
+#catimg {
+    max-width: 45vw;
+    max-height: 45vh;
+    position: absolute;
+    right: calc(.5em + 50vw);
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#joke {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 5vw;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: orange;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 5vh;
+}
+
+#word {
+    margin: 1vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: orange;
+}
