@@ -25,8 +25,8 @@ body {
 
 .text {
     text-align: center;
-    font-family: 'Copperplate';
-    font-size: 2vh;
+    font-family: "Copperplate";
+    font-size: 12pt;
     color: lightgray;
 }
 
@@ -45,7 +45,7 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-right: 5vw;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Garamond";
     color: orange;
 }
 
@@ -60,6 +60,6 @@ body {
 
 #word {
     margin: 1vh;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Garamond";
     color: orange;
 }
