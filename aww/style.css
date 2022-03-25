@@ -23,10 +23,21 @@ body {
     height: 50vh;
 }
 
+@media screen and (orientation: portrait) {
+    .text {
+        font-size: 18pt;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .text {
+        font-size: 12pt;
+    }
+}
+
 .text {
     text-align: center;
     font-family: "Copperplate";
-    font-size: 12pt;
     color: lightgray;
 }
 
