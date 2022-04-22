@@ -35,7 +35,6 @@ body {
     border: 1px solid rgb(56, 4, 4);
     color: green;
     left: 0;
-    font-size: min(3vw, 3vh);
 }
 
 #sub {
@@ -46,7 +45,6 @@ body {
     border: 1px solid rgb(56, 4, 4);
     color: red;
     right: 0;
-    font-size: min(3vw, 3vh);
 }
 
 #stars {
