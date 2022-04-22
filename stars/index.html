@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body onload="getimg()">
+
+    <img id="rateme" src="" />
+
+    <div id="rate">
+        <div id="nos_div">
+            <p id="nos"> -.- </p>
+            <div id="ctrl">
+                <button id="add" onclick="fn_add()"> + </button>
+                <button id="sub" onclick="fn_sub()"> - </button>
+            </div>
+        </div>
+
+        <div id="stars">
+            <img id="1a" class="1 a" src="star.png" onclick="choose(1, false)" onmouseover="hover(1, false)" />
+            <img id="1b" class="1 b" src="star.png" onclick="choose(1, true)" onmouseover="hover(1, true)" />
+            <img id="2a" class="2 a" src="star.png" onclick="choose(2, false)" onmouseover="hover(2, false)" />
+            <img id="2b" class="2 b" src="star.png" onclick="choose(2, true)" onmouseover="hover(2, true)" />
+            <img id="3a" class="3 a" src="star.png" onclick="choose(3, false)" onmouseover="hover(3, false)" />
+            <img id="3b" class="3 b" src="star.png" onclick="choose(3, true)" onmouseover="hover(3, true)" />
+            <img id="4a" class="4 a" src="star.png" onclick="choose(4, false)" onmouseover="hover(4, false)" />
+            <img id="4b" class="4 b" src="star.png" onclick="choose(4, true)" onmouseover="hover(4, true)" />
+            <img id="5a" class="5 a" src="star.png" onclick="choose(5, false)" onmouseover="hover(5, false)" />
+            <img id="5b" class="5 b" src="star.png" onclick="choose(5, true)" onmouseover="hover(5, true)" />
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <hr/>
+    <br/>
+
+    <button id="make" onclick="create()"> Create Your Own Rating Page! </button>
+
+    <link rel="stylesheet" href="stars.css">
+
+    <script src="stars.js"></script>
+
+</body>
+
+</html>

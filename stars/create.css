@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(240, 255, 242);
+}
+
+#link {
+    background-color: rgb(247, 243, 215);
+    color: blue;
+}
+
+#doit {
+    background-color: rgb(255, 176, 176);
+    color: rgb(87, 15, 154);
+}
+
+#invalid {
+    color: rgba(220, 27, 20, 0);
+}
