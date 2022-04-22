@@ -32,7 +32,7 @@ function testImage(url, suc, err) {
 function make() {
     var link = document.getElementById("link").value;
     testImage(link,
-        function() { window.location.href = "index.html?img=" + link; },
+        function() { window.location.href = "nikita-der-beste.github.io/stars?img=" + link; },
         invin);
 }
 
