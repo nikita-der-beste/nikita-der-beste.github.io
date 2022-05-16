@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<body onload="gen()" style="background-color: darkblue; color: orange; ">
+
+    <p> Text: <input type="text" value="Hello " id="text" style="background-color: orchid; color: blue; font-weight: bold;" /> </p>
+    <p> Repeating: <input type="text" value="<3" id="repeating" style="background-color: orchid; color: blue; font-weight: bold;" /> </p>
+
+    <button onclick="gen()" style="background-color: yellow; color: brown; font-weight: bold;"> Generate Message </button>
+    <br>
+    <br>
+    <textarea id="result" readonly style="background-color: lightslategray; color: white; "> (GENERATED MESSAGE) </textarea>
+    <button onclick="cpy()" style="background-color: lightgreen; color: lightcoral; font-weight: bold; ">Copy Message</button>
+</body>
+
+<script>
+    function gen() {
+        const text = document.getElementById("text").value;
+        const repeating = document.getElementById("repeating").value;
+
+        if (text.length > 0 && repeating.length > 0) {
+            document.getElementById("result").value = text + repeating.repeat((65536 - text.length) / repeating.length);
+            console.log("TEXT: ");
+            console.log(text + repeating.repeat((65536 - text.lenght) / repeating.length));
+            console.log("text: " + text.length + ", repeating: " + repeating.length + " -> " + ((65536 - text.length) / repeating.length));
+        } else {
+            console.log("ERR");
+        }
+    }
+
+    function cpy() { /* Get the text field */
+        var copyText = document.getElementById("result");
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */ /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+    }
+</script>
+
+</html>
