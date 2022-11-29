@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+}
+
+.clock_side {
+    background-color: azure;
+    width: 100%;
+    height: 48vh;
+    color: gray;
+    font-size: xx-large;
+}
+
+#b1 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-bottom: 4px;
+    background-color: whitesmoke;
+}
+
+#b2 {
+    background-color: lightcoral;
+}
