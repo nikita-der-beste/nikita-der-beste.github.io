@@ -17,9 +17,13 @@ function increment() {
     if (curr == 'white') {
         time_white -= 1;
         document.getElementById('b1').innerHTML = time_text(time_white);
+        if (time_white <= 0)
+            document.getElementById('body').innerHTML = "<h1> BLACK WINS (on time) </h1>";
     } else if (curr == 'black') {
         time_black -= 1;
         document.getElementById('b2').innerHTML = time_text(time_black);
+        if (time_black <= 0)
+            document.getElementById('body').innerHTML = "<h1> WHITE WINS (on time) </h1>";
     }
 }
 
@@ -45,6 +49,8 @@ function initfn() {
 }
 
 function press(from) {
+    if (curr != from && curr != 'none')
+        return;
     if (from == 'white') {
         curr = 'black';
         document.getElementById('b1').style.backgroundColor = 'darkgrey';
