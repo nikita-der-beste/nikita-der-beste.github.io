@@ -87,7 +87,7 @@ function pause() {
     } else {
         document.getElementById('pause').style.backgroundColor = 'black';
         document.getElementById('pause').style.color = 'gold';
-        document.getElementById('pause').innerHTML = '⏸';
+        document.getElementById('pause').innerHTML = '⏸︎';
     }
 }
 
