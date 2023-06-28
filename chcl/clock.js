@@ -6,6 +6,8 @@ var added = 0;
 
 var paused = false;
 
+var moves = 0;
+
 function time_text(time) {
     var sectime = Math.floor(time / 10);
     var mins = Math.floor(sectime / 60);
@@ -60,12 +62,14 @@ function press(from) {
     if (curr != from && curr != 'none')
         return;
     if (from == 'white') {
+        ++moves;
+        document.getElementById('moves').innerHTML = moves.toString();
         curr = 'black';
         document.getElementById('b1').style.backgroundColor = 'darkgrey';
         document.getElementById('b1').style.color = 'grey';
         document.getElementById('b2').style.backgroundColor = 'lightcoral';
         document.getElementById('b2').style.color = 'darkred';
-        time_white += added;
+        time_white += added * 10;
         document.getElementById('b1').innerHTML = time_text(time_white);
     } else if (from == 'black') {
         curr = 'white';
@@ -73,7 +77,7 @@ function press(from) {
         document.getElementById('b1').style.color = 'red';
         document.getElementById('b2').style.backgroundColor = 'brown';
         document.getElementById('b2').style.color = 'grey';
-        time_black += added;
+        time_black += added * 10;
         document.getElementById('b2').innerHTML = time_text(time_black);
     }
 }
