@@ -17,8 +17,23 @@ body {
     font-size: min(13vw, 36vh)
 }
 
-#pause {
+#mid {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(90deg);
+    display: flex;
     width: 100%;
+    height: 10vh;
+}
+
+#moves {
+    width: 50%;
+    height: 10vh;
+    background-color: aquamarine;
+    color: gold;
+}
+
+#pause {
+    width: 50%;
     height: 10vh;
     background-color: black;
     color: gold;
