@@ -10,7 +10,7 @@ function time_text(time) {
     var sectime = Math.floor(time / 10);
     var mins = Math.floor(sectime / 60);
     var secs = (sectime - mins * 60).toString();
-    var tenths = (sectime - secs * 10).toString();
+    var tenths = (time - sectime * 10).toString();
     if (secs.length < 2) {
         secs = '0' + secs;
     }
