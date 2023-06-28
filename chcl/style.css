@@ -14,7 +14,6 @@ body {
     height: 45vh;
     color: gray;
     font-size: min(13vw, 36vh)
-    position: fixed;
 }
 
 #pause {
