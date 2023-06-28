@@ -4,7 +4,7 @@ var time_white = 60 * 10;
 var time_black = 60 * 10;
 var added = 0;
 
-var paused = 0;
+var paused = false;
 
 function time_text(time) {
     var mins = Math.floor(time / 60);
@@ -53,6 +53,7 @@ function initfn() {
 }
 
 function press(from) {
+    paused = false;
     if (curr != from && curr != 'none')
         return;
     if (from == 'white') {
@@ -77,11 +78,13 @@ function press(from) {
 function pause() {
     paused = !paused;
     if (paused) {
-          document.getElementById('pause').style.backgroundColor = 'white';
-          document.getElementById('pause').style.color = 'black';
+        document.getElementById('pause').style.backgroundColor = 'gold';
+        document.getElementById('pause').style.color = 'black';
+        document.getElementById('pause').innerHTML = '▷';
     } else {
-          document.getElementById('pause').style.backgroundColor = 'black';
-          document.getElementById('pause').style.color = 'white';
+        document.getElementById('pause').style.backgroundColor = 'black';
+        document.getElementById('pause').style.color = 'gold';
+        document.getElementById('pause').innerHTML = '||';
     }
 }
 
