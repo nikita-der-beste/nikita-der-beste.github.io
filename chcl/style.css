@@ -1,6 +1,11 @@
+html {
+    overflow: hidden;
+}
+
 body {
     background-color: gray;
     overflow: hidden;
+    position: relative;
 }
 
 .clock_side {
