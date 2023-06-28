@@ -1,18 +1,20 @@
 var curr = 'none';
 
-var time_white = 60 * 10;
-var time_black = 60 * 10;
+var time_white = 60 * 10 * 10;
+var time_black = 60 * 10 * 10;
 var added = 0;
 
 var paused = false;
 
 function time_text(time) {
-    var mins = Math.floor(time / 60);
-    var secs = (time - mins * 60).toString();
+    var sectime = Math.floor(time / 10);
+    var mins = Math.floor(sectime / 60);
+    var secs = (sectime - mins * 60).toString();
+    var tenths = (sectime - secs * 10).toString();
     if (secs.length < 2) {
         secs = '0' + secs;
     }
-    return mins.toString() + ':' + secs;
+    return mins.toString() + ':' + secs + '<sub>' + tenths + '</sub>';
 }
 
 function increment() {
@@ -37,8 +39,9 @@ function initfn() {
 
     var time = +url.searchParams.get("time");
     var inc = +url.searchParams.get("increment");
-
+        
     if (time > 0) {
+        time *= 10;
         time_white = time;
         time_black = time;
     }
@@ -49,7 +52,7 @@ function initfn() {
     document.getElementById('b1').innerHTML = time_text(time_white);
     document.getElementById('b2').innerHTML = time_text(time_black);
 
-    setInterval(increment, 1000);
+    setInterval(increment, 100);
 }
 
 function press(from) {
@@ -84,7 +87,7 @@ function pause() {
     } else {
         document.getElementById('pause').style.backgroundColor = 'black';
         document.getElementById('pause').style.color = 'gold';
-        document.getElementById('pause').innerHTML = '||';
+        document.getElementById('pause').innerHTML = '⏸';
     }
 }
 
