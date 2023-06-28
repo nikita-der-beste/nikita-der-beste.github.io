@@ -6,9 +6,6 @@ var added = 0;
 
 var paused = false;
 
-var white_moves = 0;
-var black_moves = 0;
-
 function time_text(time) {
     var sectime = Math.floor(time / 10);
     var mins = Math.floor(sectime / 60);
@@ -59,13 +56,9 @@ function initfn() {
 }
 
 function press(from) {
-    if (paused)
-        return;
     if (curr != from && curr != 'none')
         return;
     if (from == 'white') {
-        ++white_moves;
-        document.getElementById('white_moves').innerHTML = white_moves.toString();
         curr = 'black';
         document.getElementById('b1').style.backgroundColor = 'darkgrey';
         document.getElementById('b1').style.color = 'grey';
@@ -74,8 +67,6 @@ function press(from) {
         time_white += added * 10;
         document.getElementById('b1').innerHTML = time_text(time_white);
     } else if (from == 'black') {
-        ++black_moves;
-        document.getElementById('black_moves').innerHTML = black_moves.toString();
         curr = 'white';
         document.getElementById('b1').style.backgroundColor = 'whitesmoke';
         document.getElementById('b1').style.color = 'red';
