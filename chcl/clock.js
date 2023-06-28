@@ -4,6 +4,8 @@ var time_white = 60 * 10;
 var time_black = 60 * 10;
 var added = 0;
 
+var paused = 0;
+
 function time_text(time) {
     var mins = Math.floor(time / 60);
     var secs = (time - mins * 60).toString();
@@ -14,6 +16,8 @@ function time_text(time) {
 }
 
 function increment() {
+    if (paused)
+        return;
     if (curr == 'white') {
         time_white -= 1;
         document.getElementById('b1').innerHTML = time_text(time_white);
@@ -67,6 +71,17 @@ function press(from) {
         document.getElementById('b2').style.color = 'grey';
         time_black += added;
         document.getElementById('b2').innerHTML = time_text(time_black);
+    }
+}
+
+function pause() {
+    paused = !paused;
+    if (paused) {
+          document.getElementById('pause').style.backgroundColor = 'white';
+          document.getElementById('pause').style.color = 'black';
+    } else {
+          document.getElementById('pause').style.backgroundColor = 'black';
+          document.getElementById('pause').style.color = 'white';
     }
 }
 
