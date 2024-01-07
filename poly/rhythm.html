@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div class="split left" >
+		<div id="f1"> 1 </div>
+
+</div>
+<div class="split right" >
+		<div id="f2"> 1 </div>
+</div>
+
+<script src="rhythm.js">
+
+
+</script>
+
+
+<style>
+
+#f1 {
+	font-size: 50vh;
+	color: #F00;
+	background-color: #111;
+}
+
+#f2 {
+	font-size: 50vh;
+	color: #000;
+	background-color: #F00;
+}
+
+.border {
+}
+
+.top {
+	margin-top: 50vh;
+	margin-bottom: 0;
+	background: white;
+	width: 42vw;
+	height: 1vh;
+}
+
+.low {
+	position: absolute;
+	top: 90vh;
+	left: 5vh;
+	margin-bottom: 0;
+	background: white;
+	width: 42vw;
+	height: 1vh;
+}
+
+.bottom {
+	margin-top: 80vh;
+	width: 40vw;
+	height: 1.2vh;
+}
+
+.two {
+	margin-top: 26.66vh;
+	width: 38vw;
+}
+
+.three {
+	margin-top: 26.66vh;
+	width: 38vw;
+}
+
+#ln1 {
+	background-color: red;
+}
+
+#ln2 {
+	background-color: #111;
+}
+
+ /* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+</style>
+
+</body>
+
+</html>
