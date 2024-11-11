@@ -100,6 +100,7 @@ var gd = false;
 function play_again() {
 	document.getElementById("again").style.visibility = "hidden";
         document.getElementById("end").style.visibility = "hidden";
+	document.getElementById("rand").style.visibility = "hidden";
 	play_mode(last_m, last_t);
 }
 
