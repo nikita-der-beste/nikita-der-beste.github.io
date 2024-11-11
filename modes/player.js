@@ -92,13 +92,20 @@ async function play_mode(m, t) {
 var last_m = 0;
 var last_t = 0;
 
+var gd = false;
+
 function play_again() {
 	document.getElementById("again").style.visibility = "hidden";
         document.getElementById("end").style.visibility = "hidden";
 	play_mode(last_m, last_t);
+
+	if (gd == true) {
+		aufdecken();
+	}
 }
 
 function play_random() {
+	gd = false;
 	last_m = rand_int(6);
 	last_t = rand_int(20) + 20;
 	
@@ -125,7 +132,7 @@ function aufdecken() {
 	document.getElementById("antwort").innerHTML = "Es war: " + m;
 
 	document.getElementById("rand").style.visibility = "visible";
-	document.getElementById("again").style.visibility = "hidden";
+	gd = true;
         document.getElementById("end").style.visibility = "hidden";
 }
 
