@@ -87,6 +87,9 @@ async function play_mode(m, t) {
 	document.getElementById("again").style.visibility = "visible";
         document.getElementById("end").style.visibility = "visible";
 	document.getElementById("antwort").innerHTML = "";
+	if (gd == true) {
+		aufdecken();
+	}
 }
 
 var last_m = 0;
@@ -98,10 +101,6 @@ function play_again() {
 	document.getElementById("again").style.visibility = "hidden";
         document.getElementById("end").style.visibility = "hidden";
 	play_mode(last_m, last_t);
-
-	if (gd == true) {
-		aufdecken();
-	}
 }
 
 function play_random() {
