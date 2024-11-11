@@ -42,7 +42,7 @@ async function play_note1(i) {
 	}
 	audio1.src = 'piano-mp3/' + get_note_name(i) + '.mp3';
 	audio1.load();
-	await sleep(200);
+	await sleep(800);
 
 	audio1.play();
 	//audio.load();
@@ -60,7 +60,7 @@ async function play_note2(i) {
 	}
 	audio2.src = 'piano-mp3/' + get_note_name(i) + '.mp3';
 	audio2.load();
-	await sleep(200);
+	await sleep(800);
 
 	audio2.play();
 	//audio.load();
@@ -83,7 +83,7 @@ async function play_mode(m, t) {
 	}
 	play_note2(t);
 
-	await sleep(2000);
+	await sleep(2500);
 	document.getElementById("again").style.visibility = "visible";
         document.getElementById("end").style.visibility = "visible";
 	document.getElementById("antwort").innerHTML = "";
